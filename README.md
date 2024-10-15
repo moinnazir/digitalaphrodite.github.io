@@ -1,536 +1,467 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
- <meta charset="UTF-8">  
- <meta http-equiv="X-UA-Compatible" content="IE=edge">  
- <meta name="viewport" content="width=device-width, initial-scale=1.0">  
- <title>Document</title>  
- <link rel="stylesheet" href="./style.css">  
-</head>  
-  
- <body>  
-  <nav class=" navbar background">  
-    <ul class="nav-list">  
-      <div class="logo">  
-        <img src=" https://media.licdn.com/dms/image/C4D0BAQEwg5FK93uumQ/company-logo_200_200/0/1519923012279?e=2147483647&v=beta&t=63CNoS8OTR4lHjPhHSO7eFFqwLGwYunWfyDBV3tdc0c">  
-      </div>  
-      <li><a href="#web">Web Technology</a></li>  
-      <li><a href="#program">C Programming</a></li>  
-      <li><a href="#course">Courses</a></li>  
-    </ul>  
-  
-    <div class="rightNav">  
-      <input type="text" name="search" id="search">  
-      <button class="btn btn-sm">Search</button>  
-    </div>  
-  </nav>  
-  
-  <section class=" first section">  
-    <div class="box-main">  
-      <div class="firstHalf">  
-        <h1 class="text-big" id="web">  
-          Web Technology  
-        </h1>  
-           
-        <p class="text-small">  
-          HTML referred to as HyperText Markup  
-          Language. It is the most widely used language that is used to develop a webpage. it was created by Berner-Lee in the year of 1991. The first standard version of HTML is HTML 2.0 .It was launched in the year of 1995. The major version of HTML is HTML5 which was launched in the year of 1999. Now we are using the latest version of HTML, which is HTML5. With the help of HTML, we can create a website and become web developers.  
-        </p>  
-  
-  
-      </div>  
-    </div>  
-  </section>  
-  
-  <section class= "second section">  
-    <div class="box-main">  
-      <div class="secondHalf">  
-        <h1 class="text-big" id="program">  
-          C Programming  
-        </h1>  
-        <p class="text-small">  
-          C is a powerful general-purpose programming language developed at AT & T's Bell Laboratories of USA in 1972.It was designed and written by Dennis Ritchie. C become popular because it is reliable, simple, and easy to use.C Programming used to develop software like operating systems, databases, compilers, and so on. C programming is an excellent language to learn to program for beginners.  
-Although numerous computer languages are used for writing computer applications, the computer programming language, C, is the most popular language worldwide. Everything from microcontrollers to operating systems is written in C since it's very flexible and versatile, allowing maximum control with minimal commands. If you are interested in a career in computer programming, it would be wise to start by learning the C programming language.  
-        </p>  
-  
-  
-      </div>  
-    </div>  
-  </section>  
-  
-  <section class="section">  
-    <div class="paras">  
-      <h1 class="sectionTag text-big">Java</h1>  
-  
-      <p class= "sectionSubTag text-small">  
-        Java is the one of the most  
-        popular programming language  
-        for many years. Java is also known as Object  
-        Oriented Programming Language. But we cannot say that Java is not  
-        considered as pure object-oriented  
-        as it provides support for primitive  
-        data types (like int, char, etc) The  
-        Java codes are first compiled into byte  
-        code (machine-independent code). Then  
-        the byte code is run on Java Virtual  
-        Machine (JVM), regardless of the  
-        underlying architecture.  
-      </p>  
-  
-  
-    </div>  
-  
-    <div class="thumbnail">  
-      <img src="https://wallpapers.com/images/featured/murjp1nk4lp1idlt.jpg" alt="laptop image">  
-    </div>  
-  </section>  
-  
-  <footer class="background">  
-    <p class="text-footer">  
-      Copyright ?-All rights are reserved  
-    </p>  
-  
-  
-  </footer>  
-  
- </body>  
-  
-</html>  
-CSS Design
-With the help of CSS, we can provide a better appearance to the webpage. The most difficult part is to set the image in different parts of the webpage.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hype.Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav id="home">
+      <div class="container main-nav flex">
+        <a href="#" class="company-logo">
+          <img src="Images/logo.svg" alt="company logo" /><span
+            >Hype.Agency</span
+          >
+        </a>
+        <div class="nav-links" id="nav-links">
+          <ul class="flex">
+            <li>
+              <a href="#" class="hover-link">Home</a>
+            </li>
+            <li>
+              <a href="#services" class="hover-link">Services</a>
+            </li>
 
-CSS Code:
+            <li>
+              <a href="#portfolio" class="hover-link">Portfolio</a>
+            </li>
 
-*{  
- margin: 0;  
- padding: 0;  
-}  
-  
-.navbar {  
- display: flex;  
- align-items: center;  
- justify-content: center;  
- position: sticky;  
- top: 0;  
- cursor: pointer;  
-}  
-  
-.background {  
- background: black;  
- background-blend-mode: darken;  
- background-size cover;  
-}  
-  
-.nav-list {  
- width: 70%;  
- display: flex;  
- align-items: center;  
-}  
-  
-.logo {  
- display: flex;  
- justify-content: center;  
- align-items: center;  
-}  
-  
-.logo img {  
- width: 50px;  
- border-radius: 50px;  
-}  
-  
-.nav-list li {  
- list-style: none;  
- padding: 26px 30px;  
-}  
-  
-.nav-list li a {  
- text-decoration: none;  
- color: white;  
-}  
-  
-.nav-list li a:hover {  
- color: grey;  
-}  
-  
-.rightnav {  
- width: 30%;  
- text-align: right;  
-}  
-  
-#search {  
- padding: 5px;  
- font-size: 17px;  
- border: 2px solid grey;  
- border-radius: 9px;  
-}  
-  
-.firstsection {  
- background-color: RGB(116, 241, 116);  
- height: 400px;  
-}  
-  
-.secondsection {  
- background-color: RGB(95, 95, 160);  
- height: 400px;  
-}  
-  
-.box-main {  
- display: flex;  
- justify-content: center;  
- align-items: center;  
- color: black;  
- max-width: 80%;  
- margin: auto;  
- height: 80%;  
-}  
-  
-.firsthalf {  
- width: 100%;  
- display: flex;  
- flex-direction: column;  
- justify-content: center;  
-}  
-  
-.secondhalf {  
- width: 30%;  
-}  
-  
-.secondhalf img {  
- width: 70%;  
- border: 4px solid white;  
- border-radius: 150px;  
- display: block;  
- margin: auto;  
-}  
-  
-.text-big {  
- font-family: 'Piazzolla', serif;  
- font-weight: bold;  
- font-size: 35px;  
-}  
-  
-.text-small {  
- font-size: 18px;  
-}  
-  
-.btn {  
- padding: 8px 20px;  
- margin: 7px 0;  
- border: 2px solid white;  
- border-radius: 8px;  
- background: none;  
- color: white;  
- cursor: pointer;  
-}  
-  
-.btn-sm {  
- padding: 6px 10px;  
- vertical-align: middle;  
-}  
-  
-.section {  
- height: 400px;  
- display: flex;  
- align-items: center;  
- justify-content: center;  
- max-width: 90%;  
- margin: auto;  
-}  
-  
-.section-Left {  
- flex-direction: row-reverse;  
-}  
-  
-.paras {  
- padding: 0px 65px;  
-}  
-  
-.thumbnail img {  
- width: 250px;  
- border: 2px solid black;  
- border-radius: 26px;  
- margin-top: 19px;  
-}  
-  
-.center {  
- text-align: center;  
-}  
-  
-.text-footer {  
- text-align: center;  
- padding: 30px 0;  
- font-family: 'Ubuntu,' sans-serif;  
- display: flex;  
- justify-content: center;  
- color: white;  
-}  
-Final Code
-After performing all the modifications and combining the HTML and CSS code in one code, the final code becomes:
+            <li>
+              <a href="#" class="hover-link primary-button">Let’s Talk 👋</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="nav-toggle hover-link" id="nav-toggle"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- header  -->
+    <header>
+      <div class="container header-section flex">
+        <div class="header-left">
+          <h1>Designing Tomorrow</h1>
+          <p>
+            We are a team of enthusiastic individuals who help brands grow by
+            unleashing the potential of social media
+          </p>
+          <a href="#" class="primary-button">Contact us</a>
+          <a href="#" class="secondary-button">Download Brochure</a>
+        </div>
+        <div class="header-right">
+          <img src="Images/companylogo.png" alt="Hero image" />
+        </div>
+      </div>
+    </header>
 
-Code:
+    <!-- big feature section  -->
+    <div id="services" class="features-header">
+      <h2>Your Brand, Our Canvas</h2>
+      <h3>Our Services</h3>
+    </div>
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container">
+        <div class="feature-img">
+          <img class="feature-img-odd" src="Images/service (6).png" alt="" />
+        </div>
+        <div class="feature-text flex">
+          <h3>Web Development</h3>
+          <h4>Dynamic and functional websites</h4>
+          <p>
+            Crafting captivating websites that seamlessly blend creativity and
+            functionality. Our team ensures a unique online experience tailored
+            to your business needs, utilizing cutting-edge technology and design
+            principles for impactful results.
+          </p>
+          <!-- services box-->
+          <span
+            class="button button-flex button-small button-link services-button"
+          >
+            View more
+            <i class="fa-solid fa-arrow-right button-icon"></i>
+          </span>
+          <div class="services-box">
+            <div class="services-box-content">
+              <h2 class="services-box-title">
+                Web <br />
+                Development
+              </h2>
+              <i class="fa-solid fa-xmark services-box-close"></i>
 
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
- <meta charset="UTF-8">  
- <meta http-equiv="X-UA-Compatible" content="IE=edge">  
- <meta name="viewport" content="width=device-width, initial-scale=1.0">  
- <title>Welcome to my website</title>  
- <style>  
-    
-  *{  
-    margin: 0;  
-    padding: 0;  
-  }  
-  
-  .navbar {  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
-    position: sticky;  
-    top: 0;  
-    cursor: pointer;  
-  }  
-  
-  .background {  
-    background: black;  
-    background-blend-mode: darken;  
-    background-size cover;  
-  }  
-  
-  .nav-list {  
-    width: 70%;  
-    display: flex;  
-    align-items: center;  
-  }  
-  
-  .logo {  
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-  }  
-  
-  .logo img {  
-    width: 50px;  
-    border-radius: 50px;  
-  }  
-  
-  .nav-list li {  
-    list-style: none;  
-    padding: 26px 30px;  
-  }  
-  
-  .nav-list li a {  
-    text-decoration: none;  
-    color: white;  
-  }  
-  
-  .nav-list li a:hover {  
-    color: grey;  
-  }  
-  
-  .rightnav {  
-    width: 30%;  
-    text-align: right;  
-  }  
-  
-  #search {  
-    padding: 5px;  
-    font-size: 17px;  
-    border: 2px solid grey;  
-    border-radius: 9px;  
-  }  
-  
-  .firstsection {  
-    background-color: RGB(116, 241, 116);  
-    height: 400px;  
-  }  
-  
-  .secondsection {  
-    background-color: RGB(95, 95, 160);  
-    height: 400px;  
-  }  
-  
-  .box-main {  
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-    color: black;  
-    max-width: 80%;  
-    margin: auto;  
-    height: 80%;  
-  }  
-  
-  .firsthalf {  
-    width: 100%;  
-    display: flex;  
-    flex-direction: column;  
-    justify-content: center;  
-  }  
-  
-  .secondhalf {  
-    width: 30%;  
-  }  
-  
-  .secondhalf img {  
-    width: 70%;  
-    border: 4px solid white;  
-    border-radius: 150px;  
-    display: block;  
-    margin: auto;  
-  }  
-  
-  .text-big {  
-    font-family: 'Piazzolla', serif;  
-    font-weight: bold;  
-    font-size: 35px;  
-  }  
-  
-  .text-small {  
-    font-size: 18px;  
-  }  
-  
-  .btn {  
-    padding: 8px 20px;  
-    margin: 7px 0;  
-    border: 2px solid white;  
-    border-radius: 8px;  
-    background: none;  
-    color: white;  
-    cursor: pointer;  
-  }  
-  
-  .btn-sm {  
-    padding: 6px 10px;  
-    vertical-align: middle;  
-  }  
-  
-  .section {  
-    height: 400px;  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
-    max-width: 90%;  
-    margin: auto;  
-  }  
-  
-  .section-Left {  
-    flex-direction: row-reverse;  
-  }  
-  
-  .paras {  
-    padding: 0px 65px;  
-  }  
-  
-  .thumbnail img {  
-    width: 250px;  
-    border: 2px solid black;  
-    border-radius: 26px;  
-    margin-top: 19px;  
-  }  
-  
-  .center {  
-    text-align: center;  
-  }  
-  
-  .text-footer {  
-    text-align: center;  
-    padding: 30px 0;  
-    font-family: 'Ubuntu,' sans-serif;  
-    display: flex;  
-    justify-content: center;  
-    color: white;  
-  }  
-  
- </style>  
-   
-</head>  
-  
- <body>  
-  <nav class=" navbar background">  
-    <ul class="nav-list">  
-      <div class="logo">  
-        <img src="https://media.licdn.com/dms/image/C4D0BAQEwg5FK93uumQ/company-logo_200_200/0/1519923012279?e=2147483647&v=beta&t=63CNoS8OTR4lHjPhHSO7eFFqwLGwYunWfyDBV3tdc0c">  
-      </div>  
-      <li><a href="#web">Web Technology</a></li>  
-      <li><a href="#program">C Programming</a></li>  
-      <li><a href="#course">Courses</a></li>  
-    </ul>  
-  
-    <div class="rightNav">  
-      <input type="text" name="search" id="search">  
-      <button class="btn btn-sm">Search</button>  
-    </div>  
-  </nav>  
-  
-  <section class=" first section">  
-    <div class="box-main">  
-      <div class="firstHalf">  
-        <h1 class="text-big" id="web">  
-          Web Technology  
-        </h1>  
-           
-        <p class="text-small">  
-           HTML, referred to as HyperText Markup  
-          Language. It is the most widely used language that is used to develop a webpage. it was created by Berner-Lee in the year of 1991. The first standard version of HTML is HTML 2.0 .It was launched in the year of 1995. The major version of HTML is HTML5 which was launched in the year of 1999. Now we are using the latest version of HTML, which is HTML5. With the help of HTML, we can create a website and become web developers.  
-        </p>  
-  
-  
-      </div>  
-    </div>  
-  </section>  
-  
-  <section class= "second section">  
-    <div class="box-main">  
-      <div class="secondHalf">  
-        <h1 class="text-big" id="program">  
-          C Programming  
-        </h1>  
-        <p class="text-small">  
-          C is a powerful general-purpose programming language developed at AT & T's Bell Laboratories of USA in 1972.It was designed and written by Dennis Ritchie. C become popular because it is reliable, simple, and easy to use.C Programming is used to develop software like operating systems, databases, compilers, and so on. C programming is an excellent language to learn to program for beginners.  
-Although numerous computer languages are used for writing computer applications, the computer programming language, C, is the most popular language worldwide. Everything from microcontrollers to operating systems is written in C since it's very flexible and versatile, allowing maximum control with minimal commands. If you are interested in a career in computer programming, it would be wise to start by learning the C programming language.  
-        </p>  
-  
-  
-      </div>  
-    </div>  
-  </section>  
-  
-  <section class="section">  
-    <div class="paras">  
-      <h1 class="sectionTag text-big">Java</h1>  
-  
-      <p class= "sectionSubTag text-small">  
-        Java is the one of the most  
-        popular programming language  
-        for many years. Java is also known as Object  
-        Oriented Programming Language. But we cannot say that Java is not  
-        considered as pure object-oriented  
-        as it provides support for primitive  
-        data types (like int, char, etc) The  
-        Java codes are first compiled into byte  
-        code (machine-independent code). Then  
-        the byte code is run on Java Virtual  
-        Machine (JVM), regardless of the  
-        underlying architecture.  
-      </p>  
-  
-  
-    </div>  
-  
-    <div class="thumbnail">  
-      <img src="https://wallpapers.com/images/featured/murjp1nk4lp1idlt.jpg" alt="laptop image">  
-    </div>  
-  </section>  
-  
-  <footer class="background">  
-    <p class="text-footer">  
-      Copyright ©-All rights are reserved  
-    </p>  
-  
-  
-  </footer>  
-  
- </body>  
-  
-</html>  
+              <ul class="services-box-services grid">
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Responsive Web Design</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Interactive User Interfaces</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>SEO-Friendly Implementations</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Ongoing support and maintenance</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- services box end -->
+        </div>
+      </div>
+    </section>
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container" id="second-big-feature">
+        <div class="feature-img">
+          <img src="Images/service (1).png" alt="" />
+        </div>
+        <div class="feature-text flex">
+          <h3>Web Designing</h3>
+          <h4>Aesthetically engaging websites</h4>
+          <p>
+            Creating visually compelling websites that reflect your unique
+            identity. Whether you seek a sleek corporate aesthetic or a vibrant
+            portfolio showcase, our team is committed to translating your vision
+            into an engaging online presence.
+          </p>
+          <!-- services box-->
+          <span
+            class="button button-flex button-small button-link services-button"
+          >
+            View more
+            <i class="fa-solid fa-arrow-right button-icon"></i>
+          </span>
+          <div class="services-box">
+            <div class="services-box-content">
+              <h2 class="services-box-title">
+                Web <br />
+                Designing
+              </h2>
+              <i class="fa-solid fa-xmark services-box-close"></i>
+
+              <ul class="services-box-services grid">
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Creative and visually appealing designs</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>UI/UX focused for intuitive interfaces</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Custom graphics and illustrations</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Mobile-responsive designs</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- services box end -->
+        </div>
+      </div>
+    </section>
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container">
+        <div class="feature-img">
+          <img class="feature-img-odd" src="Images/service (2).png" alt="" />
+        </div>
+        <div class="feature-text flex">
+          <h3>Graphics Designing</h3>
+          <h4>Multipurpose designing</h4>
+          <p>
+            Enhance your brand with versatile and customized graphic design
+            services, delivering striking visuals for marketing, branding, and
+            social media.
+          </p>
+          <!-- services box-->
+          <span
+            class="button button-flex button-small button-link services-button"
+          >
+            View more
+            <i class="fa-solid fa-arrow-right button-icon"></i>
+          </span>
+          <div class="services-box">
+            <div class="services-box-content">
+              <h2 class="services-box-title">
+                Graphics <br />
+                Design
+              </h2>
+              <i class="fa-solid fa-xmark services-box-close"></i>
+
+              <ul class="services-box-services grid">
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Eye-catching visual elements for branding</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Professional logo design</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Print and digital media designs</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Infographics and illustrations</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- services box end -->
+        </div>
+      </div>
+    </section>
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container" id="second-big-feature">
+        <div class="feature-img">
+          <img src="Images/service (3).png" alt="" />
+        </div>
+        <div class="feature-text flex">
+          <h3>Video Editing</h3>
+          <h4>Vlogs, Tutorials, Educational etc.</h4>
+          <p>
+            Turn your unprocessed footage into captivating videos using our
+            expert video editing services. We bring your story to life, managing
+            the process from concept to delivery.
+          </p>
+          <!-- services box-->
+          <span
+            class="button button-flex button-small button-link services-button"
+          >
+            View more
+            <i class="fa-solid fa-arrow-right button-icon"></i>
+          </span>
+          <div class="services-box">
+            <div class="services-box-content">
+              <h2 class="services-box-title">
+                Video <br />
+                Editing
+              </h2>
+              <i class="fa-solid fa-xmark services-box-close"></i>
+
+              <ul class="services-box-services grid">
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Seamless edits for storytelling</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Professional transitions and editing</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Tailored content for social media</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Fast turnaround without compromising quality</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- services box end -->
+        </div>
+      </div>
+    </section>
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container">
+        <div class="feature-img">
+          <img class="feature-img-odd" src="Images/service (4).png" alt="" />
+        </div>
+        <div class="feature-text flex">
+          <h3>Social Media Management</h3>
+          <h4>For Brands and Influencers</h4>
+          <p>
+            Enhance your social media influence with our professional management
+            services. We craft compelling strategies to boost engagement,
+            increase followers, and expand your reach.
+          </p>
+          <!-- services box-->
+          <span
+            class="button button-flex button-small button-link services-button"
+          >
+            View more
+            <i class="fa-solid fa-arrow-right button-icon"></i>
+          </span>
+          <div class="services-box">
+            <div class="services-box-content">
+              <h2 class="services-box-title">
+                Social Media <br />
+                Management
+              </h2>
+              <i class="fa-solid fa-xmark services-box-close"></i>
+
+              <ul class="services-box-services grid">
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Daily monitoring and engagement across platforms</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Content calendar planning and scheduling</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Community building and fostering brand loyalty</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>
+                    Performance tracking and reporting for continuous
+                    improvement
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- services box end -->
+        </div>
+      </div>
+    </section>
+    <section class="big-feature-section">
+      <div class="container flex big-feature-container" id="second-big-feature">
+        <div class="feature-img">
+          <img src="Images/service (5).png" alt="" />
+        </div>
+        <div class="feature-text flex">
+          <h3>Advertising</h3>
+          <h4>Facebook, Instagram and Google</h4>
+          <p>
+            Strengthen your brand through advertising on Facebook, Instagram,
+            Google, and YouTube. Expand your reach, increase sales, and optimize
+            visibility to millions.
+          </p>
+          <!-- services box-->
+          <span
+            class="button button-flex button-small button-link services-button"
+          >
+            View more
+            <i class="fa-solid fa-arrow-right button-icon"></i>
+          </span>
+          <div class="services-box">
+            <div class="services-box-content">
+              <h2 class="services-box-title">Advertising</h2>
+              <i class="fa-solid fa-xmark services-box-close"></i>
+
+              <ul class="services-box-services grid">
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Targeted campaigns for specific audiences</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Creative Ad copies and visuals</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>A/B testing for optimization</p>
+                </li>
+                <li class="services-box-list">
+                  <i class="fa-regular fa-circle-check services-list-icon"></i>
+                  <p>Comprehensive analytics for informed decisions</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- services box end -->
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="examples-section">
+      <div class="container">
+        <div class="examples-header flex">
+          <h2 class="examples-heading-text">Portfolio</h2>
+          <a href="#portfolio" class="secondary-button"
+            >Our previous work <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+        <div class="examples-area flex">
+          <a href="#" class="examples-card ex-card-img1">
+            <h3 class="card-text">Wazwaan Stories' Website</h3>
+          </a>
+          <a href="#" class="examples-card ex-card-img2">
+            <h3 class="card-text">Brand logo for Inkwell Designs</h3>
+          </a>
+          <a href="#" class="examples-card ex-card-img3">
+            <h3 class="card-text">Marketing Campaigns for Taaza</h3>
+          </a>
+          <a href="#" class="examples-card ex-card-img4">
+            <h3 class="card-text">Discovery's Thumbnail</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container flex cta-section-container">
+        <h2>Contact Us</h2>
+        <p>Let’s talk about ideas</p>
+        <a href="#" class="primary-button"> Let’s Talk 👋</a>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+      <div class="container flex footer-container">
+        <a href="#" class="company-logo">
+          <img src="Images/logo.svg" alt="company logo" /><span
+            >Hype.Agency</span
+          >
+        </a>
+        <div class="link-column flex">
+          <h4>Hype.Agency</h4>
+          <a href="#" class="hover-link">About Us</a>
+          <a href="#" class="hover-link">Our Team</a>
+
+          <a href="#" class="hover-link">Contact us</a>
+          <a href="#" class="hover-link">Careers</a>
+        </div>
+        <div class="link-column flex">
+          <h4>Our Services</h4>
+          <a href="#" class="hover-link">Web development</a>
+          <a href="#" class="hover-link">Web designing</a>
+          <a href="#" class="hover-link">Graphics design</a>
+          <a href="#" class="hover-link">Video editing</a>
+          <a href="#" class="hover-link">Social media management</a>
+          <a href="#" class="hover-link">Advertising</a>
+        </div>
+        <div class="link-column flex">
+          <h4>Portfolio</h4>
+          <a href="#portfolio" class="hover-link">Previous Work</a>
+          <a href="#" class="hover-link">Testimonials</a>
+          <a href="#" class="hover-link">Acheivements</a>
+        </div>
+      </div>
+    </footer>
+    <div class="subfooter">
+      <div class="container flex subfooter-container">
+        <a href="#" class="hover-link">Privacy Policy</a>
+        <a href="#" class="hover-link">Terms & Condition</a>
+        <a href="#" class="hover-link">Security Information</a>
+        <a href="#" class="hover-link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover-link"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <!-- scroll to top -->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up scroll-up-icon"></i>
+    </a>
+    <script
+      src="https://kit.fontawesome.com/c3ca1814da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
