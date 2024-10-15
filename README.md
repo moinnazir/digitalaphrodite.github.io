@@ -49,7 +49,7 @@
             We are a team of enthusiastic individuals who help brands grow by
             unleashing the potential of social media
           </p>
-          <a href=https://digitalaphrodite.com/"" class="primary-button">Contact us</a>
+          <a href="https://digitalaphrodite.com/" class="primary-button">Contact us</a>
           <a href="https://digitalaphrodite.com/" class="secondary-button">Download Brochure</a>
         </div>
         <div class="header-right">
